@@ -1,0 +1,123 @@
+.dataContainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 335px;
+}
+.dataContainer__text{
+  white-space: nowrap;
+  margin: 0 27.8px 0 15px;
+}
+.dataContainer__line{
+  width: 100%;
+  border-bottom: 1px solid #DBDBDB;
+}
+.mainContainer{
+  margin: 46px auto 80px auto;
+  background-image: url('backgroundImg.svg');
+  width: 651px;
+  height: 757px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.containerOfMessages{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  border-bottom: 1px solid #DBDBDB;
+  padding: 41px 19px 30px 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  z-index: 1;
+}
+.containerOfMessages :nth-child(even){
+  flex-direction: row-reverse;
+}
+.containerOfMessages :nth-child(4){
+  margin-top: 60px;
+}
+.containerOfMessages__messageContainer{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.message{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background: #F1F3F5;
+  border-radius: 5px;
+  max-width: 470px;
+  min-height: 47px;
+  box-sizing: border-box;
+  padding: 0 15px 0 15px;
+  position: relative;
+}
+.message__vector{
+  border: 10px solid transparent; border-top: 10px solid #F1F3F5;;
+  position: absolute;
+  margin-top: 7px;
+  top: 0;
+}
+.message__vector--toLeftSide{
+  left: -7px;
+}
+.message__vector--toRightSide{
+  right: -7px;
+}
+.containerOfMessages__avatar{
+  width: 47px;
+  height: 47px;
+  margin-right: 18px;
+  right: -7px;
+}
+.containerOfMessages__avatar-ml{
+  margin-left: 18px;
+}
+.footerContainer{
+  padding: 20px 41px 30px 20px;
+}
+.footerContainer__containerOfTextArea{
+  width: 590px;
+  height: 129px;
+  padding: 10px;
+  background: #FFFFFF;
+  border: 1px solid #DBDBDB;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: none;
+  color: #696969;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+.footerContainer__submitBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 144px;
+  height: 41px;
+  font-family: Proxima Nova;
+  font-size: 16px;
+  line-height: 24px;
+  background: #0F54B9;
+  box-shadow: 0px 4px 6px rgba(15, 84, 185, 0.3);
+  border-radius: 21px;
+  border: none;
+  color: #FFFFFF;;
+}
+
+.addPadding{
+  padding: 15px 15px 7px 15px !important;
+}
